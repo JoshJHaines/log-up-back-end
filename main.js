@@ -34,6 +34,14 @@ function isValidPassword(userPassword) {
   }
 }
 
+function isRegisteredUser(userEmail){
+  if (userEmail === user1 || userEmail === user2 || userEmail === user3 ){
+    return true
+  } else {
+    return false
+  }
+}
+
 // Our code below. Do not touch!
 
 if (typeof isValidEmail === "undefined") {
