@@ -42,6 +42,14 @@ function isRegisteredUser(userEmail){
   }
 }
 
+function passwordMatches(str1 , str2){
+  if(str1 === user1 && str2 === password1|| str1 ===user2 && str2=== password2 || str1 === user3 && str2 === password3){
+    return true;
+  }else{
+    return false;
+  }
+}
+
 // Our code below. Do not touch!
 
 if (typeof isValidEmail === "undefined") {
