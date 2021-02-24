@@ -16,6 +16,7 @@ function isValidEmail(userEmail) {
   const split = userEmail.indexOf(["@"]);
   const domain = userEmail.split(userEmail[split]);
 
+
   if (domain[1] === "codeimmersives.com" && userEmail[0] !== "@") {
     return true;
   } else {
@@ -23,8 +24,10 @@ function isValidEmail(userEmail) {
   }
 }
 
+isValidEmail(user1)
+
 function isValidPassword(userPassword) {
-  if (userPassword.length >= 8) {
+  if (userPassword.length >= 8 && userPassword.match(/[a-z]/) && userPassword.match(/[A-Z]/)) {
     return true;
   } else {
     return false;
