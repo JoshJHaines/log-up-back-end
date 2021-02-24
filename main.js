@@ -13,8 +13,8 @@ const password3 = "like a BOSS";
 // **YOUR** code below. Pass those tests!
 
 function isValidEmail(userEmail) {
-  const split = userEmail.indexOf(["@"])
-  const domain = userEmail.split(userEmail[split])
+  const split = userEmail.indexOf(["@"]);
+  const domain = userEmail.split(userEmail[split]);
 
   if (domain[1] === "codeimmersives.com" && userEmail[0] !== "@") {
     return true;
@@ -23,7 +23,13 @@ function isValidEmail(userEmail) {
   }
 }
 
-isValidEmail(user1)
+function isValidPassword(userPassword) {
+  if (userPassword.length >= 8) {
+    return true;
+  } else {
+    return false;
+  }
+}
 
 // Our code below. Do not touch!
 
